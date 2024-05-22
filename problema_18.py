@@ -2,15 +2,9 @@
 # Escriba un programa que solicite una contraseña (el texto de la contraseña no es importante) y la vuelva a solicitar hasta que las dos contraseñas
 # coincidan.
 
-while True:
-    contraseña1 = input("Ingrese la contraseña: ")
-    contraseña2 = input("Ingrese la contraseña nuevamente: ")
-    if contraseña1 == contraseña2:
-        print("Contraseña confirmada.")
-        break
-    else:
-        print("Las contraseñas no coinciden. Inténtelo de nuevo.")
-
+while (contraseña := input("Ingrese la contraseña: ")) != input("Vuelva a ingresar la contraseña: "):
+    print("Las contraseñas no coinciden. Inténtelo de nuevo.")
+print("¡Las contraseñas coinciden!")
 
 #Este programa solicitará al usuario ingresar una contraseña y luego la misma contraseña nuevamente.
 # Si las dos contraseñas coinciden, el programa imprimirá "Contraseña confirmada." y saldrá del bucle.
